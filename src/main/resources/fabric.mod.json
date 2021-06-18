@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "magicion",
+  "version": "${mod_version}",
+  "name": "Magicion",
+  "description": "Magicion is a mod aiming to expand the magic in Minecraft.\nThis mod adds new magical content such as enchantments, illagers, and potions, as well as introducing a whole new system with magic where the player can cast their own simple combinations of spells!",
+  "authors": [
+    "RUE Development"
+  ],
+  "contributors": [
+    "xf8b"
+  ],
+  "contact": {
+    "homepage": "https://ruedevelopment.github.io/",
+    "repo": "https://github.com/ruedevelopment/magicion-fabric/",
+    "issues": "https://github.com/ruedevelopment/magicion-fabric/issues/"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/qffW76Je3b"
+      }
+    }
+  },
+  "license": "LGPL-3.0-or-later",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.ruedevelopment.magicion.client.MagicionClient::INSTANCE"
+    ],
+    "main": [
+      "io.github.ruedevelopment.magicion.Magicion::INSTANCE"
+    ]
+  },
+  "mixins": [
+    "magicion.mixins.json"
+  ],
+  "depends": {
+    "java": ">=16",
+    "minecraft": ">=1.16.5",
+    "fabric": ">=${fabric_api_version}",
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}"
+  }
+}
